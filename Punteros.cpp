@@ -34,6 +34,21 @@ int Punteros::numeroAlCuboReferencia(int& numeroPtr) {
     return numeroPtr;
 }
 
+float Punteros::numeroRaizCuadradaValor(int numero) {
+	numero = sqrt(numero);
+	return numero;
+
+}
+float Punteros::numeroRaizCuadradaPuntero(int *numeroPtr) {
+	*numeroPtr = sqrt(*numeroPtr);
+	return *numeroPtr;
+
+}
+float Punteros::numeroRaizCuadradaReferencia(int& numeroPtr) {
+	numeroPtr = sqrt(numeroPtr);
+	return numeroPtr;
+}
+
 void Punteros::imprimirDatosPuntero() {
     int numero = 0;
     int *numeroPtr = nullptr;
@@ -95,4 +110,47 @@ void Punteros::imprimirCalculoAlCuboReferenciaReferencia() {
     numero = numeroAlCuboReferencia(numero);
 
     std::cout << "\n\tEl resulado al cubo de la variable [ numero ] es: " << numero << std::endl;
+}
+
+void Punteros::imprimirCalculoloRaizCuadradaReferenciaValor() {
+    int numero = 0;
+
+	numero = 1;
+
+	std::cout << "\nImprime datos de los punteros que se pasan por Valor ____________________"
+		<< std::endl;
+	std::cout << "\tEl valor original de la variable [ numero ] es " << numero;
+
+	numero = numeroRaizCuadradaValor(numero);
+
+	std::cout << "\n\tEl resulado de la Raiz Cuadrada de la variable [ numero ] es: " << numero << std::endl;
+}
+
+void Punteros::imprimirCalculoRaizCuadradaReferenciaPuntero() {
+	int numero = 0;
+
+	numero = 5;
+
+	std::cout << "\nImprime datos de los punteros que se pasan por Puntero ____________________"
+		<< std::endl;
+	std::cout << "\tEl valor original de la variable [ numero ] es " << numero;
+
+	numero = numeroRaizCuadradaPuntero(&numero);
+
+	std::cout << "\n\tEl resulado de la Raiz Cuadrada de la variable [ numero ] es: " << numero << std::endl;
+}
+
+void Punteros::imprimirCalculoRaizCuadradaReferenciaReferencia() {
+	int numero = 0;
+
+	numero = 5;
+
+	std::cout << "\nImprime datos de los punteros que se pasan por Referencia ____________________"
+		<< std::endl;
+	std::cout << "\tEl valor original de la variable [ numero ] es " << numero;
+
+	numero = numeroRaizCuadradaReferencia(numero);
+
+	std::cout << "\n\tEl resulado al cubo de la variable [ numero ] es: " << numero << std::endl;
+
 }

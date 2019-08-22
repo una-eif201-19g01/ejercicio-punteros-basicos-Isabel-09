@@ -37,8 +37,11 @@ void menu() {
         std::cout << "  2.  Imprime el número 5 al cubo con función por VALOR\n";
         std::cout << "  3.  Imprime el número 5 al cubo con función por PUNTERO3\n";
         std::cout << "  4.  Imprime el número 5 al cubo con función por REFERENCIA\n";
+		std::cout << "  5.  Imprime el número 5 la Raiz Cuadrada con función por Valor\n";
+		std::cout << "  6.  Imprime el número 5 la Raiz Cuadrada con funcion por PUNTERO3\n";
+		std::cout << "  7.  Imprime el número 5 la Raiz Cuadrada con función por REFERENCIA\n";
         std::cout << "\n";
-        std::cout << "  5.  Exit\n";
+        std::cout << "  8.  Exit\n";
         std::cout << "  ====================================\n";
         std::cout << "  Enter your selection: ";
         std::cin >> respuesta;
@@ -65,8 +68,22 @@ void menu() {
                 std::cin.ignore();
                 std::cin.get();
                 break;
-
-            case 5:
+			case 5:
+				Punteros::imprimirCalculoloRaizCuadradaReferenciaValor();
+				std::cin.ignore();
+				std::cin.get();
+				break;
+			case 6:
+				Punteros::imprimirCalculoRaizCuadradaReferenciaPuntero();
+				std::cin.ignore();
+				std::cin.get();
+				break;
+			case 7:
+				Punteros::imprimirCalculoRaizCuadradaReferenciaReferencia();
+				std::cin.ignore();
+				std::cin.get();
+				break;
+            case 8:
                 std::cout << "Hasta Luego.\n";
                 break;
 
@@ -75,7 +92,7 @@ void menu() {
 
                 std::cout << std::endl;
         }
-    } while (respuesta != 5);
+    } while (respuesta != 8);
 }
 
 
