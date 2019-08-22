@@ -115,7 +115,7 @@ void Punteros::imprimirCalculoAlCuboReferenciaReferencia() {
 void Punteros::imprimirCalculoloRaizCuadradaReferenciaValor() {
     int numero = 0;
 
-	numero = 1;
+	numero = 5;
 
 	std::cout << "\nImprime datos de los punteros que se pasan por Valor ____________________"
 		<< std::endl;

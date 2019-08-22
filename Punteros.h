@@ -18,19 +18,19 @@
 #include<math.h>
 
 class Punteros {
-    static int numeroAlCuboValor(int);
-    static int numeroAlCuboPuntero(int *);
-    static int numeroAlCuboReferencia(int &);
+	static int numeroAlCuboValor(int);
+	static int numeroAlCuboPuntero(int*);
+	static int numeroAlCuboReferencia(int&);
 	static float numeroRaizCuadradaValor(int);
 	static float numeroRaizCuadradaPuntero(int*);
 	static float 	numeroRaizCuadradaReferencia(int&);
 public:
-    Punteros();
+	Punteros();
 
-    static void imprimirDatosPuntero();
-    static void imprimirCalculoAlCuboReferenciaValor();
-    static void imprimirCalculoAlCuboReferenciaPuntero();
-    static void imprimirCalculoAlCuboReferenciaReferencia();
+	static void imprimirDatosPuntero();
+	static void imprimirCalculoAlCuboReferenciaValor();
+	static void imprimirCalculoAlCuboReferenciaPuntero();
+	static void imprimirCalculoAlCuboReferenciaReferencia();
 	static void imprimirCalculoloRaizCuadradaReferenciaValor();
 	static void imprimirCalculoRaizCuadradaReferenciaPuntero();
 	static void imprimirCalculoRaizCuadradaReferenciaReferencia();
