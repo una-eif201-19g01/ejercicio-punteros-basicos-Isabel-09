@@ -23,7 +23,7 @@ class Punteros {
 	static int numeroAlCuboReferencia(int&);
 	static float numeroRaizCuadradaValor(int);
 	static float numeroRaizCuadradaPuntero(int*);
-	static float 	numeroRaizCuadradaReferencia(int&);
+	static float numeroRaizCuadradaReferencia(int&);
 public:
 	Punteros();
 
